@@ -1,0 +1,21 @@
+//
+// Created by Mike Mitterer on 10.03.17.
+//
+// cmake-Template für config.h
+//
+
+#ifndef XCTEST_CONFIG_H_IN_H
+#define XCTEST_CONFIG_H_IN_H
+
+#include <string>
+
+// the configured options and settings for HelloWorld
+const std::string Eddystone_VERSION_MAJOR = "@Eddystone_VERSION_MAJOR@";
+const std::string Eddystone_VERSION_MINOR = "@Eddystone_VERSION_MINOR@";
+
+// Password compiled into source
+// Set in .config/passwords.cmake (or via ENV-VAR)
+const std::string Eddystone_PASSWORD_LS = "@Eddystone_PASSWORD_LS@";
+const std::string Eddystone_PASSWORD_TPL = "@Eddystone_PASSWORD_TPL@";
+
+#endif //XCTEST_CONFIG_H_IN_H
